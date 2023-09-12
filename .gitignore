@@ -1,0 +1,31 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+.idea
+/fd_fe/node_modules
+/fd_fe/.idea
+/fd_fe/package-lock.json
+
+/frauddetect/node_modules
+/frauddetect/.idea
+/frauddetect/package-lock.json
+
+/fd_fe/.pnp
+/fd_fe/.pnp.js
+
+# testing
+/fd_fe/coverage
+
+# production
+/fd_fe/build
+
+# misc
+/fd_fe/.DS_Store
+/fd_fe/.env.local
+/fd_fe/.env.development.local
+/fd_fe/.env.test.local
+/fd_fe/.env.production.local
+
+/fd_fe/npm-debug.log*
+/fd_fe/yarn-debug.log*
+/fd_fe/yarn-error.log*

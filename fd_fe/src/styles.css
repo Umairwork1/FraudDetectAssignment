@@ -1,0 +1,64 @@
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.id {
+    font-size: 20px;
+    margin: 0;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    margin: 0;
+}
+.button-flag{
+    background-color: brown;
+    color: #cccccc;
+    margin:5px;
+    padding: 5px;
+}
+.button-allow{
+    background-color: darkolivegreen;
+    color: #cccccc;
+    margin:5px;
+    padding: 5px;
+}
+.button-view{
+    margin-left:30%;
+    padding: 5px;
+}
+.view-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-self: center;
+    margin-top: 20px;
+    align-items:center;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.button-comment{
+    margin-left: auto;
+    padding: 5px;
+}

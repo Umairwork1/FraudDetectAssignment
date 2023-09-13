@@ -4,13 +4,22 @@
     justify-content: space-between;
     margin: 10px;
 }
+
 .card {
-    width: 30%;
+    width: 100%; /* Default to full width on smaller screens */
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+    .card {
+        width: 48%;
+    }
 }
 
 .id {
@@ -26,39 +35,52 @@
     font-weight: bold;
     margin: 0;
 }
-.button-flag{
+
+.button-flag {
     background-color: brown;
     color: #cccccc;
-    margin:5px;
+    margin: 5px;
     padding: 5px;
 }
-.button-allow{
+
+.button-allow {
     background-color: darkolivegreen;
     color: #cccccc;
-    margin:5px;
+    margin: 5px;
     padding: 5px;
 }
-.button-view{
-    margin-left:30%;
+
+.button-view {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     padding: 5px;
 }
-.view-container{
-    display:flex;
+
+.view-container {
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-self: center;
     margin-top: 20px;
-    align-items:center;
-    width: 50%;
+    align-items: center;
+    width: 100%;
     margin-bottom: 20px;
-    margin-left: 20%;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
-
 }
-.button-comment{
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+    .view-container {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+.button-comment {
     margin-left: auto;
     padding: 5px;
 }

@@ -9,7 +9,7 @@ services:
     command: npm start
     networks:
       gateway:
-        ipv4_address: 172.20.0.2
+        ipv4_address: 172.22.0.2
 
   client:
     build: ./fd_fe
@@ -22,10 +22,10 @@ services:
     command: npm start
     networks:
       gateway:
-        ipv4_address: 172.20.0.3
+        ipv4_address: 172.22.0.3
 
 networks:
   gateway:
     ipam:
       config:
-        - subnet: 172.20.0.0/24
+        - subnet: 172.22.0.0/24
